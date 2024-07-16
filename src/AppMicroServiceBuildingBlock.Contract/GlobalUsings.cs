@@ -1,6 +1,6 @@
 ﻿namespace AppMicroServiceBuildingBlock.Contract;
 
-public class Class1
+public class GlobalUsings
 {
 
 }
