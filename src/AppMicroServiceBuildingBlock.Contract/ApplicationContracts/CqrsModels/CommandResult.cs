@@ -2,9 +2,7 @@
 
 public class CommandResult
 {
-    
 }
 public class CommandResult<TResult>
 {
-    
 }
