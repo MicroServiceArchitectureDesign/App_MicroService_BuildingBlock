@@ -18,18 +18,6 @@ public class MediatorBus(IMediator mediator) : IMediatorBus
     {
         return mediator.Send(request, cancellationToken);
     }
-
-    public IAsyncEnumerable<TResponse> CreateStream<TResponse>(IStreamRequest<TResponse> request,
-        CancellationToken cancellationToken = default)
-    {
-        return mediator.CreateStream(request, cancellationToken);
-    }
-
-    public IAsyncEnumerable<object?> CreateStream(object request, CancellationToken cancellationToken = default)
-    {
-        return mediator.CreateStream(request, cancellationToken);
-    }
-
     public Task Publish(object notification, CancellationToken cancellationToken = default)
     {
         return mediator.Publish(notification, cancellationToken);
